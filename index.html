@@ -2,12 +2,20 @@
 <html lang=”en”>
 
 <head>
-  <title>Life in the Alps</title>
+  <title>Healthy Honey</title>
   <meta charset="UTF-8">
   <meta name="description" content="An exploration of all things alpine">
   <meta name="keywords" content="alpine, alps, Europe, food, historical">
   <meta name="author" content="Michael Wirth">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- colours:
+    background: #fdf9f1 (off white)
+    highlight: #FFD34E (mustard yellow)
+    h2: #DB9E36 (yellow-brown)
+    h3: #424363 (blue-grey)
+    lighter shade: #FFFAD5 (light yellow)
+  -->
 
   <style>
     div {
@@ -16,28 +24,58 @@
     }
 
     body {
-      background-color: rgb(225, 226, 228);
+      margin-top: 0%;
+      margin-left: 0%;
+      margin-right: 0%;
+      background-color: #fdf9f1;
     }
 
     h1 {
-      font-family: Didot, Times, serif;
-      color: DarkBlue;
-      font-size: 40px;
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 42px;
+      font-weight: bolder;
+      color: black;
+      letter-spacing: 10px;
+    }
+
+    h1 span {
+      background-color: #FFD34E;
+      padding: 5px;
     }
 
     h2 {
-      font-family: Didot, Times, serif;
-      color: DarkBlue;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #DB9E36;
     }
 
-    p,
-    li {
-      font-family: Didot, Georgia, serif;
+    h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #424363;
+    }
+
+
+    p, li {
+      font-family: Arial, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
       line-height: 1.4;
     }
 
     blockquote {
-      font-family: Didot, Georgia, serif;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+    }
+
+    cite, figcaption {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: smaller;
+    }
+
+    header {
+      margin: 0% 0% 5% 0%;
     }
 
     .header-pic {
@@ -45,334 +83,203 @@
       display: block;
       max-width: 100%;
       height: 350px;
-      background-image: url('alpvista.png');
+      background-image: url('honey-background.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      opacity: 0.7
     }
 
-    .header-text {
-      position: absolute;
-      top: 40%;
-      width: 100%;
-      text-align: right;
-      font-family: Tahoma, Verdana, sans-serif;
-      font-size: 42px;
-      font-weight: bolder;
-      color: RGB(45, 38, 20);
-      ;
-      letter-spacing: 10px;
+    .main-content {
+      margin-right: 5%;
+      margin-left: 5%;
     }
 
-    .header-text span {
-      background-color: RGB(213, 216, 223);
-      padding: 5px;
+    .section {
+      margin-top: 2%;
     }
 
-    .adlib {
-      width: 75%;
-      border: 1px solid black;
-      border-radius: 5px;
-      padding: 10px 10px 10px 10px;
-      margin-left: 25px;
-    }
   </style>
 </head>
 
 <body>
   <header>
     <div class="header-pic">
-      <div class="header-text"><span>Life in the Alps</span></div>
+      <h1><span>Healthy Honey</span></hi>
     </div>
   </header>
 
-  <p>This blog is dedicated to life in the alpine reaches of Europe through
-    the eyes of tourists who visited the region in the Victorian era... with some
-    modern ideas.
-  </p>
-
-  <ul>
-    <li> <a href="#section1"> What is an Alp?</a></li>
-    <li> <a href="#section2"> On cheese making</a></li>
-    <li> <a href="#section3"> Eating bread in a mountain village</a></li>
-    <li> <a href="#section4"> On alpine architecture</a></li>
-    <li> <a href="#section5"> The Edelweiss</a></li>
-    <li> <a href="#section6"> What did they eat in the Grisons valleys?</a></li>
-    <li> <a href="#section7"> Meagre cheese and mummy beef</a></li>
-  </ul>
-
-
-  <h2 id="section1"> What is an Alp?</h2>
-  <div>
-    <cite>From "My Home in the Alps", by Mrs. Main in 1892.</cite>
-    <p>Do you know, my readers, what an alp is? Perhaps the question seems trivial to
-      you, and you feel inclined to reply indignantly, "Of course!" Well, perhaps you
-      are right; but still I am going to describe an alp, for it is also very possible
-      that you are wrong. As to what an alp is not, I will begin by stating most
-      emphatically that it is not a mountain, that it is not snow-covered in summer,
-      and that it has nothing whatever to do with those incidents of nature spoken of
-      in guide-books as "the Alps." An alp is written with a small a- this is one
-      distinction. It is a pasture tenanted in summer by cows, goats, and huge black
-      pigs, and young men and maidens to look after the same, consequently it is not
-      snow-covered except in winter, and as it supplies the animals with beautiful and
-      nourishing grass, it presents a very different aspect to the rocky and ice-clad
-      sides of the Alps (with a large A).</p>
-    <p>During the long winter months, the cows, which are of such value to the Swiss,
-      are kept in hot, often stuffy, stables in the villages, and only taken out every
-      day for water. It is a familiar sight to winter visitors in the Alps to meet these
-      animals in the village street, plunging and galloping about in the enjoyment of a
-      few breaths of fresh air on their way to drink at one of the many troughs with
-      which even the smallest of Alpine hamlets is so liberally supplied.</p>
-    <figure>
-      <img src="alpcowtrek.jpg" alt="Alp cow trek" height="auto" width="75%" />
-      <figcaption>Heading to the alp</figcaption>
-    </figure>
-    <p>Towards the beginning of May, the cows are taken from their stables and driven to
-      the lower alps. These alps constitute a great source of wealth to the country.
-      Many owners of large herds of cattle have as many as three, situated at different
-      altitudes on the mountain-side. It is to the lowest that the cows first go, and
-      by the time its rich pasturage has been fully enjoyed and considerably diminished,
-      the snow will have melted from the slopes above, and thither the herd pursues
-      its way. By the middle of June, or later, the highest alp is gained, and there the
-      animals remain till the early autumn approaches. Then they descend, halting for a
-      month or so at the intermediate stattions, till the end of October sees them once
-      more established in the valley for the winter.</p>
-
-    <p class="adlib">
-      Who was Mrs. Main? Elizabeth Hawkins-Whitshed (1860-1934) was born in Ireland
-      and was a mountaineering pioneer at a time when it was unheard of for women to
-      climb mountains. She was married three times (her second husband was John F. Main)
-      and was known after her third marriage as Mrs Aubrey Le Blond. In the age of 21
-      she moved to Switzerland, and during that summer scaled Mont Blanc twice. She
-      was an avid writer, and photographer, publishing her first book <em>The High Alps
-        in Winter</em> in 1883. Find more about
-      <a href="https://chamonixallyear.com/lady-legends-women-in-mountaineering/" target="_blank">
-        Lady Legends of the Alps</a>.
+  <div class="main-content">
+    <p>
+      Honey is a natural liquid sweetener bees make after collecting flower nectar. Known for its millions of uses in our
+      favourite foods and enormous list of health benefits, you’re sure to have had a taste of this sugary delight at least
+      once in your life. If you’re one of the many people who believe there’s only one kind of honey, this article is about to
+      help you get your facts straight.
     </p>
 
-    <p class="adlib">
-      <b>the Alps</b> relates to the whole, snow-capped European mountain range (Alp
-      is related to the Latin <em>alus</em>, meaning white) that stretches from Austria
-      and Slovenia in the east through Italy, Switzerland, Lichtenstein, Germany and
-      France in the west.
-    </p>
-  </div>
+    <ul>
+      <li> <a href="#section1"> Overview </a></li>
+      <li> <a href="#section2"> Overall Benefits </a></li>
+      <li> <a href="#section3"> Foodie Favourites </a></li>
+      <li> <a href="#section4"> Good to know </a></li>
+      <li> <a href="#section5"> Further Reading </a></li>
+    </ul>
 
-
-  <div>
-    <h2 id="section2"> On cheese making</h2>
-    <cite>From "The Alpine Regions of Switzerland and the
-      Neighbouring Countries", by T.G.Bonney in 1868.</cite>
-    <p>Cheese is always made twice a day. The milk is warmed in the great caldron before
-      the rennet is put in, and then stirred for half-an-hour. The curds, after draining
-      a little, are at once put under the press. The cheeses are turned daily, and salt
-      is said to be rubbed into them with a stiff brush. There are generally three
-      qualities, the rich (<em>gras</em>), the <em>demi-gras</em>, and the <em>maigre</em>.
-      The first is made of new
-      milk, or new milk with cream added; the second of equal parts of new and skim milk;
-      and the third with skim milk alone. When the curds have been removed (which is done
-      by the hands or by a strainer) some more rennet is added to the whey, and from the
-      curds thus obtained a kind of cheese is made, called <em>serret</em>, or <em>s&eacuterac</em>,
-      which in taste resembles the poorest English cream-cheeses. This forms one of the
-      herdsmen's perquisites; it is sometimes eaten fresh, sometimes salted for keeping;
-      the latter being to my taste the more palatable. The milk, when first cracked, is
-      called <em>niedl</em>, <em>brousse</em> or <em>fleurette</em>, and is a noted
-      mountain luxury. It is well however not to yield too freely to its seductions,
-      as it is apt to cause remorse on the morrow.
-      The most celebrated cheeses are the Gruy&egravere, made in Canton Fribourg, and
-      the Schabzieger of Canton Glarus, which is coloured greenish-blue with melilote
-      flowers. There are also several other varieties of fame. I particularly remember one,
-      in taste rather resembling Stilton, which was served to us at Chateau Queyras, in
-      Dauphin&eacute; but the common cheese is poor, like an inferior Gruy&egravere,
-      with a slightly sour taste.
-    </p>
-    <figure>
-      <img src="schabzigerKase.jpg" alt="Schabziger Cheese" height="auto" width="25%" />
-      <figcaption>Schabziger Cheese</figcaption>
-    </figure>
-
-    <p class="adlib">Schabziger is a conical cheese with a greenish tint, and an intense flavour,
-      due to the addition of a pungent, clover-like herb named <em>Trigonella Melilotus-
-        caerulea</em> or blue fenugreek. It was first made in the monasteries of Glarus in
-      the 8th century. It is one of the earliest protected brands, in 1463. Schabziger
-      is best eaten with pasta, potatoes, or blended with soft butter to make a spread.
-    </p>
-  </div>
-
-
-  <div>
-    <h2 id="section3"> Eating bread in a mountain village</h2>
-    <cite>From "The Alpine Regions of Switzerland and the
-      Neighbouring Countries", written by T.G.Bonney in 1868 (pp.237-238).</cite>
-    <p>It is a hard life in winter in a mountain village; every peasant, much as he may
-      love his home, will tell you that; <em>'Un mauvais pays, un pays des montagnes,'</em>
-      is the common complaint uttered sadly and apologetically, yet with a touch of
-      affection in the tone, while your host places his scanty fare before you. And no
-      wonder that it is hard: wages are low; the simplest luxuries dear, or unattainable,
-      for they must be brought up miles of rough mule-paths. Rye opens tolerably well when
-      the summer is fine; wheat imperfectly; so the peasant's bread must be made of the
-      former. Baking too is a serious business; and fuel, likely enough, is too dear to
-      allow of the oven being often heated. Bread therefore is made only one or twice a
-      year, <em>Toussaint</em> being a favourite season. It is baked in large cakes,
-      half a yard or so in diameter, like gigantic buns, which are stored on shelves
-      in an airy loft in the same way as cheeses. They are a dark brown colour, and they
-      soon become dry, remaining perfectly sweet and wholesome for six or even twelve
-      months. In fact, I believe that the former period is generally the shortest for
-      which a batch is made; and I can see no reason why the bread should not remain
-      good for years. It is very hard, as formidable to weak teeth as sea-biscuit, and to
-      try to slice it with an ordinary knife is lost labour: a hatchet may be used with
-      advantage, but the correct instrument is a sort of cutter, which terminates in a
-      hook fitting into a ring on a piece of board, so as to give a leverage. An enterprising
-      member of the Alpine Club thus records his experience of one of these loaves.
-    </p>
-    <blockquote>
-      Oyace yielded but one small rancid sausage, two bottles of wine, and a loaf of black
-      bread. The last may be excluded from the list. We tried to chop it with an ice axe,
-      and it hopped about the ch&acirclet like a marble; we boiled it for four long hours,
-      while we glared greedily at the pot, and at the end a quarter of an inch of the
-      outside was turned into gluey slime, and within it was as hard as ever. No
-      fragment of that loaf was ever mastered by guides or travellers. <br>
-      (Alpine Journal, Vol.1, p.222)
-    </blockquote>
-    <p class="adlib">Here is a good rendition of rye bread from the Swiss Valais, or
-      <a href="https://www.susanmckennagrant.com/2017/04/08/rye-bread-from-the-swiss-valais-pain-de-seigle-valaisan-or-walliser-roggenbrot/"
-        target="_blank">
-        Walliser Roggenbrot</a>.
-    </p>
-
-    <cite>From "A Walk in the Grisons", written by Foster Barham Zincke in 1875 (p.118).</cite>
-    <p>The bread had been baked at Silva Plana in the Engadin, and was a month old. It was
-      the petrified fossil of bread. No traces of moisture remained in it, and it was as
-      hard to masticate as it had been to cut.
-    </p>
-  </div>
-
-
-  <div>
-    <h2 id="section4"> On alpine architecture</h2>
-    <cite>From "The Alpine Regions of Switzerland and the
-      Neighbouring Countries", by T.G.Bonney in 1868 (p.242).</cite>
-    <p>Every district of course has its own peculiarities, but the domestic Alpine
-      architecture may be epitomized with tolerable correctness as follows: In the French
-      and Vaudois Alps, stone is used much more than wood, and the houses are mean and
-      unpicturesque. In the Pennine chain both are employed, but the latter rather for
-      small ch&acirclets, barns, and outbuildings. In the Oberland (using the term
-      in a wide sense) wood is the favourite building material, and nearly every cottage
-      is a study of quaint picturesqueness. In the Grisons and the adjoining Tyrol
-      the houses are usually large and plain, without beauty, but comfortable looking,
-      built of stone, plastered and white-washed; wood being chiefly used for internal
-      decorations. Further east, in the Tyrol, more use is made of the latter material,
-      the houses being often about half and half and in some of the larger villages
-      or towns, such as Sterzing on the Brenner Pass, the numerous quaint oriels and
-      bay-windows produce an excellent effect. Speaking genrally, the use of wood
-      denotes German, and that of stone Italian, influence in the population.
-    </p>
-    <figure>
-      <img src="grisonshouse.jpg" alt="A house in Graubunden" height="auto" width="50%" />
-      <figcaption>A house in the Swiss canton of Graubunden</figcaption>
-    </figure>
-  </div>
-
-  <div>
-    <h2 id="section5"> The Edelweiss</h2>
-    <cite>From "The Edelweiss", by John R. Bolles in 1881 (p.116).</cite>
-    <div style="margin-left:20px">
+    <div class="section" id="section1">
+      <h2> Overview </h2>
       <p>
-        I was born in my little shroud,<br>
-        All woolly, warm, and white,<br>
-        I live in the mist and cloud,<br>
-        I live for my own delight.<br>
+        Over 300 types of honey exist today, each with distinct flavours, colours, and health benefits. While honey is
+        categorized based on its flower source, the same kind of honey can still taste significantly different based on
+        temperature and rainfall level. Even its colour is a telling point for its flavour – lighter-coloured honey is known to
+        have a milder taste than its darker counterpart.
       </p>
       <p>
-        I see far beneath me crowd<br>
-        The alpine roses red,<br>
-        That make the valleys bright,<br>
-        And the gentian blue, sun-fed.<br>
-      </p>
-      <p>
-        I bloom for the eagle's eye,<br>
-        I bloom for the daring hand,<br>
-        I live but for God, and I die<br>
-        Unto Him, and at His command.<br>
-        Anon.<br>
+        More broadly speaking though, honey comes in two forms: raw and pasteurized. While the latter can improve texture and
+        colour, the heat used to kill undesirable yeast also tears down many of the beneficial nutrients within the honey. This
+        is why, to retain said nutrients at least, many prefer raw honey instead.
       </p>
     </div>
-  </div>
 
-  <div>
-    <h2 id="section6"> What did they eat in the Grisons valleys?</h2>
-    <cite>From "A Walk in the Grisons", written by Foster Barham Zincke in 1875 (p.118).</cite>
-    <p>My successive inquires for mutton, beef, butter, eggs, fruit, cognac, extracted from him
-      only negative replies. What, then, did the good people of Schiersch live upon? He could let
-      me have cheese and dried beef. I had been expecting mutton <em>c&ocirctelettes</em>,
-      with a dessert of figs and peaches. In my disappointment I felt disposed to go on further.
-      I could hardly fare worse by doing so. But after I had entered the house I felt a
-      disinclination, by leaving it, to balk the expectations of the good people, and perhaps
-      my own too. And so I spent half and hour at the Lion. As to the dried beef, I had ceased to
-      think it actively bad. The wine was rather sour. Against the cheese nothing could be said.
+    <div class="section" id="section2">
+      <h2> Overall Benefits </h2>
+      <p>
+        Before diving into why you may want to incorporate specific kinds of honey into your diet, it’s worth noting most
+        kinds actually share a core set of benefits! Here are a few:
+      </p>
+      
+      <ul>
+        <li>
+          While honey is mostly sugar, it contains no fat, and has small amounts of many vitamins and is rich in compounds found
+          in plants that work to boost health.
+        </li>
+        <li>
+          Honey has antidiabetic effects. It contains adiponectin, a hormone that helps regulate glucose and lipid levels which
+          diabetic patients are known to have less of. The more of this hormone your body has, the greater the improvement in
+          fasting blood sugar levels.
+        </li>
+        <li>
+          Wound healing. When applied directly to your skin, honey can actually help accelerate one’s recovery process after
+          burns, wounds, and various other skin conditions.
+        </li>
+        <li>
+          Great for sore throats. Many studies suggest consuming it may be one of the better methods of combatting sore throats
+          and coughs.
+        </li>
+      </ul>
+    </div>
+      
+    <div class="section" id="section3">
+      <h2> Foodie Favourites </h2>
+      <p>
+        Now that we’ve gone over some of the main health improvement-related properties of honey, let’s take a closer look at a
+        few of the most loved kinds of honey around the world, known not only for their flavour profile, but also for the
+        additional health benefits they bring with them
+      </p>
 
-      If this is all that Schiersch can set upon its guests, what is the usual fare of the
-      Schierschers themselves? Few of us as we pass through a smiling Swiss valley think, or know,
-      how hard its inhabitants live. They, poor souls, or rather their hard-worked bodies, have
-      neither the dried beef, nor the half sour wine, nor yet such cheese as I had. Meagre cheese,
-      the curds that rise, on the second heating, after the first curd for the cheese has been
-      removed, black rye-bread, polenta, and potatoes constitute, with coffee for their chief
-      beverage, the normal fare of the inhabitants of most of these valleys. The greater part of
-      the butter, and of the fresh meat that they produce is sent off to places, where there are
-      hotels with many travellers to be provided for.
-    </p>
-    <figure>
-      <img src="bundnerfleisch.jpg" alt="Dried beef from Grisons" height="auto" width="50%" />
-      <figcaption>Dried beef from the Swiss canton of Grisons</figcaption>
-    </figure>
-    <p class="adlib">Grisons is the largest Swiss canton, tucked away in the south-eastern part of
-      Switzerland. Grisons is the French (and English) name for the canton, in German it is
-      known as Graub&uumlnden (meaning "Gray Union"), in Italian Grigioni, and in Romansh,
-      Grischun. It is Switzerlands only trilingual canton (German, Italian, Romansh), and
-      the only one where Romansh (a descendant of Latin) has official status.
-      Schiersch is the <em>Walser German</em> word for the Grisons town of Schiers.
-    </p>
-  </div>
+      <h3> Manuka Honey </h3>
+      <p>
+        Manuka honey said to have a mildly sweet and nutty flavour, followed a lasting bitter aftertaste. It comes from a
+        certain kind of tea tree called the manuka shrub.
+      </p>
+      <p>
+        Though some may not love it for its flavour, it’s widely known for its health benefits. Native to New Zealand and
+        Australia, Manuka honey is rich in antibacterial properties, making it one of the better types of honey when used for
+        protection against bacteria and damaged tissue repair, as well as treating skincare conditions such as acne and eczema.
+        From a medical standpoint, it’s known best for its effectiveness in minor wound and burn healing (it’s been an
+        FDA-approved option for healing wounds since 2007!). While studies suggest it can also reduce digestive health issues
+        such as stomach ulcers, there is a lack of evidence to back it up.
+      </p>
+      <p>
+        Manuka honey is commonly used as a spread on toast and bagels, but is enjoyed with yogurt as well.
+      </p>
 
-  <div>
-    <h2 id="section7"> Meagre cheese and mummy beef</h2>
-    <cite>From "A Walk in the Grisons", written by Foster Barham Zincke in 1875 (p.46-47).</cite>
-    <p>As to the meagre cheese, and dried beef, during the following three weeks,
-      as must be the case with every pedestrian through the byways of the Grisons, I
-      had many opportunities of weighing their merits and demerits, undisturbed by
-      any simultaneous consideration of comestibles. The meagre cheese is made of skimmed
-      milk in places where a market can be found for butter. Peist sells its butter at
-      Coire; and so the good people of the place, and their few visitors, have to
-      content themselves with cheese from which the butter has been extracted. It is
-      not positively bad; but this negation of badness is its only merit. The dried
-      beef if a production of the Grisons, for which they are indebted to their climate.
-      At the altitude of their valleys, the air is so dry that for nine months out of
-      twelve meat has no tendency to decomposition. Availing themselves of this
-      favourable condition they kill in the autumn the beef and pork they will require
-      in the ensuing year. It is slightly salted and hung up to dry. Nothing more is
-      done to it, except eating it. In three or four months time it is not only dried,
-      but also cooked, that is to say the air has given it all the cooking it will
-      ever receive. It has become as dry and hard as a board, and internally of the
-      colour of an old mahogany table. Externally there is nothing to suggest the idea
-      of meat; it is covered with cobwebs, dust and mould, and is undistinguishable
-      from fragments of the mummies of the sacred bulls taken from the catacombs
-      of the Serapeum at Memphis. When your host brings from his cellar the leg of the
-      mummy of a Grison cow, shrunk to the dimensions of the human limb, and tells you
-      that it is to be your dinner, you are disposed to advise him to take it to the
-      trustees of the British Museum. He is, however, about to prepare some for your
-      repast, and you watch the process with curiosity. It is a very simple one: the
-      material is curt across the grain with a very sharp knife in shavings no thicker
-      than writing-paper. Were it cut the length of the fibre it would be as
-      unmanageable in the mouth as a piece of whipcord, or a fiddle-string.
-    </p>
-  </div>
+      <h3> Buckwheat Honey </h3>
+      <p>
+        Canada-based Buckwheat honey has the strongest flavour and darkest colour of the many types of honey we use today.
+        This amber-coloured honey is generally described to have an earthy aroma and is said to be less sweet than many other
+        honey varieties. This honey is made from the nectar bees collect from Buckwheat flowers.
+      </p>
+      <p>
+        All variants of this honey contain a high level of antioxidants… but what exactly does that mean? To start off,
+        oxidants are “reactive molecules” that are “produced inside your body”, in areas in which other cellular molecules such
+        as your DNA, lipids, and protein reside. The resulting damage from the reaction with these cellular molecules can have
+        serious health implications including, but not limited to, premature aging, heart disease, and cancer. What does that
+        make antioxidants? Well, quite the opposite. They help protect these macromolecules by preventing oxidants from being
+        able to attack them in the first place – and that’s why they’re so important. While Manuka honey may be considered the
+        healthier alternative from the wound healing standpoint, Buckwheat honey’s antioxidant properties trump those of Manuka
+        honey.
+      </p>
+      <p>
+        Buckwheat honey is paired with waffles, oatmeal, smoothies, and much more.
+      </p>
+
+      <h3> Acacia Honey </h3>
+      <p>
+        Acacia honey, native to eastern and southeastern North America, is almost colourless and has a lightweight, sweet
+        flavour, with a hint of vanilla. Not only is it loved for its taste, but its low sucrose content also makes it the
+        preferred choice for diabetics, and its anti-inflammatory properties makes it a good treatment for respiratory disorders.
+      </p>
+      <p>
+        It’s used with cereal, yogurt, and many drinks and desserts.
+      </p>
+    </div>
+
+    <div class="section" id="section4">
+      <h2> Good to know </h2>
+      <p>
+        While honey has an endless amount of health benefits, its consumption can cause severe reactions for those allergic to
+        bee pollen. According to MayoClinic, signs you may have had a reaction include:
+      </p>
+    
+      <ul>
+        <li>
+          Difficulty breathing,
+        </li>
+        <li>
+          Dizziness,
+        </li>
+        <li>
+          Nausea and vomiting, and
+        </li>
+        <li>
+          Stinging after application on wounds
+        </li>
+      </ul>
+    </div>
+
+    <div class="section" id="section5">
+      <h2> Further Reading </h2> 
+      <ul>
+        <li>
+          [Ref 1]
+          <a href="https://health.clevelandclinic.org/the-benefits-of-honey-how-to-incorporate-it-into-your-diet/">
+            clevelandclinic.org
+          </a>
+        </li>
+        <li>
+          [Ref 2]
+          <a href="https://health.clevelandclinic.org/the-benefits-of-honey-how-to-incorporate-it-into-your-diet/">
+            clevelandclinic.org
+          </a>
+        </li>
+        <li>
+          [Ref 3]
+          <a href="https://health.clevelandclinic.org/the-benefits-of-honey-how-to-incorporate-it-into-your-diet/">
+            clevelandclinic.org
+          </a>
+        </li>
+        <li>
+          [Ref 4]
+          <a href="https://health.clevelandclinic.org/the-benefits-of-honey-how-to-incorporate-it-into-your-diet/">
+            clevelandclinic.org
+          </a>
+        </li>
+      </ul>
+    </div>
 
 </body>
 
 <footer>
-  <p>Edited by: Michael Wirth</p>
-  <p>Contact information: <a rel="noopener" href="mailto:mwirth@uoguelph.ca"> mwirth@uoguelph.ca</a>.</p>
+  <p>Contact information: <a rel="noopener" href="mailto:rqureshi@uoguelph.ca"> rqureshi@uoguelph.ca</a>.</p>
 </footer>
 
 </html>
