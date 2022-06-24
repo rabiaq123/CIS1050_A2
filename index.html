@@ -19,6 +19,16 @@
   -->
 
   <style>
+    :root {
+      --background: #F3F0E9;
+      --highlight: #FFD34E;
+      --header2: #e9ac44;
+      --header3: #424363;
+      --lineseparator: #D2D2D8;
+      --imageborder: #727381;
+      --lightbluebg: #B2C5D4; 
+    }
+
     div {
       margin-top: 10px;
       margin-bottom: 10px;
@@ -26,7 +36,7 @@
 
     body {
       margin: 0% 0% 5%;
-      background-color: #f3f0e9;
+      background-color: var(--background);
     }
 
     h1, h3, cite {
@@ -47,12 +57,12 @@
 
     h2 {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      color: #DB9E36;
+      color: var(--header2);
       font-size:x-large;
     }
 
     h3 {
-      color: #424363;
+      color: var(--header3);
     }
 
     p, li {
@@ -67,9 +77,9 @@
     }
 
     cite {
+      padding-top: 1%;
       font-size: smaller;
       width: auto;
-      padding-top: 1%;
     }
 
     .header-pic {
@@ -81,21 +91,25 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      box-shadow: 0px 15px 15px #d2d2d8;
+      box-shadow: 0px 15px 15px var(--lineseparator);
     }
 
     .section {
       padding-top: 2%;
     }
 
+    .honey-section {
+      padding: 1% 2% 1%;
+      background-color: var(--lightbluebg);
+      outline: auto;
+      outline-color: burlywood;
+      outline-style:round;
+    }
+
     .honey-content {
       display:grid; 
       grid-template-columns:repeat(5, minmax(0, 1fr));
       align-items:center;
-    }
-
-    .honey-content p {
-      margin-top: 0%;
     }
 
     .honey-image {
@@ -105,23 +119,12 @@
     }
 
     .honey-info {
-      grid-column:span 4/span 4; 
       padding-left:5%;
+      grid-column:span 4/span 4; 
     }
 
-    .block {
-      padding: 1% 2% 2%;
-      margin: 2% 0% 2%;
-      background-color: #dddad6;
-      outline: auto;
-      outline-color: burlywood;
-      outline-style:round;
-    }
-    
-    .honey-section {
-      margin: 0% 0% 2%;
-      background-color: #b2c5d4;
-      padding: 1% 2% 1%;
+    .honey-content p {
+      margin-top: 0%;
     }
 
   </style>
@@ -225,7 +228,7 @@
       
       <!-- MANUKA HONEY -->
       <h3 style="text-transform: uppercase; padding-top:2%; margin-top:0%;" id="manuka"> Manuka Honey </h3>
-      <div class="block honey-section">
+      <div class="honey-section">
         <div class="honey-content">
           <!-- honey image -->
           <div class="honey-image">
@@ -259,7 +262,7 @@
   
       <!-- BUCKWHEAT HONEY -->
       <h3 style="text-transform: uppercase; padding-top:2%; margin-top:0%;" id="buckwheat"> Buckwheat Honey </h3>
-      <div class="block honey-section">
+      <div class="honey-section">
         <div class="honey-content">
           <!-- honey image -->
           <div class="honey-image">
@@ -296,7 +299,7 @@
   
       <!-- ACACIA HONEY -->
       <h3 style="text-transform: uppercase; padding-top:2%; margin-top:0%;" id="acacia"> Acacia Honey </h3>
-      <div class="block honey-section">
+      <div class="honey-section">
         <div class="honey-content">
           <!-- honey image -->
           <div class="honey-image">
