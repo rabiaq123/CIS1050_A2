@@ -4,9 +4,9 @@
 <head>
   <title>Healthy Honey</title>
   <meta charset="UTF-8">
-  <meta name="description" content="An exploration of all things alpine">
-  <meta name="keywords" content="alpine, alps, Europe, food, historical">
-  <meta name="author" content="Michael Wirth">
+  <meta name="description" content="Exploring the world of honey and its many health benefits">
+  <meta name="keywords" content="honey, health, buckwheat, manuka, acacia">
+  <meta name="author" content="Rabia Qureshi">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- colours:
@@ -62,20 +62,31 @@
       font-family: Arial, Geneva, Tahoma, sans-serif;
       font-size: 16px;
       line-height: 1.4;
+      position: relative;
     }
 
-    blockquote {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 14px;
+    a {
+      color: #424363;
+      text-decoration:underline;
     }
 
-    cite, figcaption {
+    figure {
+      margin: 0px;
+      padding-right: 5%;
+    }
+
+    cite {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: smaller;
+      width: auto;
     }
 
     header {
       margin: 0% 0% 5% 0%;
+    }
+
+    footer {
+      margin-bottom: 5%;
     }
 
     .header-pic {
@@ -98,6 +109,23 @@
       margin-top: 2%;
     }
 
+    .honey-section {
+      display:grid; 
+      grid-template-columns:repeat(5, minmax(0, 1fr));
+      align-items:center;
+    }
+
+    .honey-image {
+      display:flex; 
+      flex-direction:column; 
+      grid-column:span 1/span 1;
+    }
+
+    .honey-info {
+      grid-column:span 4/span 4; 
+      padding-left:5%;
+    }
+
   </style>
 </head>
 
@@ -115,9 +143,19 @@
       once in your life. If you’re one of the many people who believe there’s only one kind of honey, this article is about to
       help you get your facts straight.
     </p>
+    <p>
+      Over 300 types of honey exist today, each with distinct flavours, colours, and health benefits. While honey is
+      categorized based on its flower source, the same kind of honey can still taste significantly different based on
+      temperature and rainfall level. Even its colour is a telling point for its flavour – lighter-coloured honey is known to
+      have a milder taste than its darker counterpart.
+    </p>
+    <p>
+      More broadly speaking though, honey comes in two forms: raw and pasteurized. While the latter can improve texture and
+      colour, the heat used to kill undesirable yeast also tears down many of the beneficial nutrients within the honey. This
+      is why, to retain said nutrients at least, many prefer raw honey instead.
+    </p>
 
     <ul>
-      <li> <a href="#section1"> Overview </a></li>
       <li> <a href="#section2"> Overall Benefits </a></li>
       <li> <a href="#section3"> Foodie Favourites </a></li>
       <li> <a href="#section4"> Good to know </a></li>
@@ -125,18 +163,6 @@
     </ul>
 
     <div class="section" id="section1">
-      <h2> Overview </h2>
-      <p>
-        Over 300 types of honey exist today, each with distinct flavours, colours, and health benefits. While honey is
-        categorized based on its flower source, the same kind of honey can still taste significantly different based on
-        temperature and rainfall level. Even its colour is a telling point for its flavour – lighter-coloured honey is known to
-        have a milder taste than its darker counterpart.
-      </p>
-      <p>
-        More broadly speaking though, honey comes in two forms: raw and pasteurized. While the latter can improve texture and
-        colour, the heat used to kill undesirable yeast also tears down many of the beneficial nutrients within the honey. This
-        is why, to retain said nutrients at least, many prefer raw honey instead.
-      </p>
     </div>
 
     <div class="section" id="section2">
@@ -174,62 +200,89 @@
         few of the most loved kinds of honey around the world, known not only for their flavour profile, but also for the
         additional health benefits they bring with them
       </p>
-
+      
+      <!-- MANUKA HONEY -->
       <h3> Manuka Honey </h3>
-      <p>
-        Manuka honey said to have a mildly sweet and nutty flavour, followed a lasting bitter aftertaste. It comes from a
-        certain kind of tea tree called the manuka shrub.
-      </p>
-      <p>
-        Though some may not love it for its flavour, it’s widely known for its health benefits. Native to New Zealand and
-        Australia, Manuka honey is rich in antibacterial properties, making it one of the better types of honey when used for
-        protection against bacteria and damaged tissue repair, as well as treating skincare conditions such as acne and eczema.
-        From a medical standpoint, it’s known best for its effectiveness in minor wound and burn healing (it’s been an
-        FDA-approved option for healing wounds since 2007!). While studies suggest it can also reduce digestive health issues
-        such as stomach ulcers, there is a lack of evidence to back it up.
-      </p>
-      <p>
-        Manuka honey is commonly used as a spread on toast and bagels, but is enjoyed with yogurt as well.
-      </p>
+      <div class="honey-section">
+        <div class="honey-image">
+          <img src="manuka.jpg" alt="manuka honey">
+          <cite style="width: auto;"> [1] </cite>
+        </div>
+        <div class="honey-info">
+          <p>
+            Manuka honey is said to have a mildly sweet and nutty flavour, followed a lasting bitter aftertaste. It comes from a
+            certain kind of tea tree called the manuka shrub.
+          </p>
+          <p>
+            Though some may not love it for its flavour, it’s widely known for its health benefits. Native to New Zealand and
+            Australia, Manuka honey is rich in antibacterial properties, making it one of the better types of honey when used for
+            protection against bacteria and damaged tissue repair, as well as treating skincare conditions such as acne and eczema.
+            From a medical standpoint, it’s known best for its effectiveness in minor wound and burn healing (it’s been an
+            FDA-approved option for healing wounds since 2007!). While studies suggest it can also reduce digestive health issues
+            such as stomach ulcers, there is a lack of evidence to back it up.
+          </p>
+          <p>
+            Manuka honey is commonly used as a spread on toast and bagels, but is enjoyed with yogurt as well.
+          </p>
+        </div>
+      </div>
 
+      <!-- BUCKWHEAT HONEY -->
       <h3> Buckwheat Honey </h3>
-      <p>
-        Canada-based Buckwheat honey has the strongest flavour and darkest colour of the many types of honey we use today.
-        This amber-coloured honey is generally described to have an earthy aroma and is said to be less sweet than many other
-        honey varieties. This honey is made from the nectar bees collect from Buckwheat flowers.
-      </p>
-      <p>
-        All variants of this honey contain a high level of antioxidants… but what exactly does that mean? To start off,
-        oxidants are “reactive molecules” that are “produced inside your body”, in areas in which other cellular molecules such
-        as your DNA, lipids, and protein reside. The resulting damage from the reaction with these cellular molecules can have
-        serious health implications including, but not limited to, premature aging, heart disease, and cancer. What does that
-        make antioxidants? Well, quite the opposite. They help protect these macromolecules by preventing oxidants from being
-        able to attack them in the first place – and that’s why they’re so important. While Manuka honey may be considered the
-        healthier alternative from the wound healing standpoint, Buckwheat honey’s antioxidant properties trump those of Manuka
-        honey.
-      </p>
-      <p>
-        Buckwheat honey is paired with waffles, oatmeal, smoothies, and much more.
-      </p>
+      <div class="honey-section">
+        <div class="honey-image">
+          <img src="buckwheat.jpg" alt="buckwheat honey">
+          <cite style="width: auto;"> [2] </cite>
+        </div>
+        <div class="honey-info">
+          <p>
+            Canada-based Buckwheat honey has the strongest flavour and darkest colour of the many types of honey we use today.
+            This amber-coloured honey is generally described to have an earthy aroma and is said to be less sweet than many other
+            honey varieties. This honey is made from the nectar bees collect from Buckwheat flowers.
+          </p>
+          <p>
+            All variants of this honey contain a high level of antioxidants… but what exactly does that mean? To start off,
+            oxidants are reactive molecules produced in areas of your body in which other cellular molecules such
+            as your DNA, lipids, and protein reside. The damage caused by the reaction between oxidants and other cellular molecules can have
+            serious health implications including, but not limited to, premature aging, heart disease, and cancer. What does that
+            make antioxidants? Well, quite the opposite. They help protect these macromolecules by preventing oxidants from being
+            able to attack them in the first place – and that’s why they’re so important. While Manuka honey may be considered the
+            healthier alternative from the wound healing standpoint, Buckwheat honey’s antioxidant properties trump those of Manuka
+            honey.
+          </p>
+          <p>
+            Buckwheat honey is paired with waffles, oatmeal, smoothies, and much more.
+          </p>
+        </div>
+      </div>
 
+      <!-- ACACIA HONEY -->
       <h3> Acacia Honey </h3>
-      <p>
-        Acacia honey, native to eastern and southeastern North America, is almost colourless and has a lightweight, sweet
-        flavour, with a hint of vanilla. Not only is it loved for its taste, but its low sucrose content also makes it the
-        preferred choice for diabetics, and its anti-inflammatory properties makes it a good treatment for respiratory disorders.
-      </p>
-      <p>
-        It’s used with cereal, yogurt, and many drinks and desserts.
-      </p>
+      <div class="honey-section">
+        <div class="honey-image"">
+          <img src="acacia.jpg" alt="acacia honey">
+          <cite style="width: auto;"> [3] </cite>
+        </div>
+        <div class="honey-info">        
+          <p>
+            Acacia honey, native to eastern and southeastern North America, is almost colourless and has a lightweight, sweet
+            flavour, with a hint of vanilla. Not only is it loved for its taste, but its low sucrose content also makes it the
+            preferred choice for diabetics, and its anti-inflammatory properties makes it a good treatment for respiratory disorders.
+          </p>
+          <p>
+            It’s used with cereal, yogurt, and many drinks and desserts.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="section" id="section4">
       <h2> Good to know </h2>
       <p>
         While honey has an endless amount of health benefits, its consumption can cause severe reactions for those allergic to
-        bee pollen. According to MayoClinic, signs you may have had a reaction include:
+        bee pollen.
       </p>
-    
+      <p>Signs you may have had a reaction include:</p>
       <ul>
         <li>
           Difficulty breathing,
@@ -251,26 +304,20 @@
       <ul>
         <li>
           [Ref 1]
-          <a href="https://health.clevelandclinic.org/the-benefits-of-honey-how-to-incorporate-it-into-your-diet/">
+          <a href="https://health.clevelandclinic.org/manuka-honey-benefits/">
             clevelandclinic.org
           </a>
         </li>
         <li>
           [Ref 2]
-          <a href="https://health.clevelandclinic.org/the-benefits-of-honey-how-to-incorporate-it-into-your-diet/">
-            clevelandclinic.org
+          <a href="https://www.honeytraveler.com/single-flower-honey/buckwheat-honey/">
+            honeytraveler.com
           </a>
         </li>
         <li>
           [Ref 3]
-          <a href="https://health.clevelandclinic.org/the-benefits-of-honey-how-to-incorporate-it-into-your-diet/">
-            clevelandclinic.org
-          </a>
-        </li>
-        <li>
-          [Ref 4]
-          <a href="https://health.clevelandclinic.org/the-benefits-of-honey-how-to-incorporate-it-into-your-diet/">
-            clevelandclinic.org
+          <a href="https://www.webstaurantstore.com/guide/685/types-of-honey.html#types">
+            webstaurantstore.com
           </a>
         </li>
       </ul>
@@ -279,7 +326,7 @@
 </body>
 
 <footer>
-  <p>Contact information: <a rel="noopener" href="mailto:rqureshi@uoguelph.ca"> rqureshi@uoguelph.ca</a>.</p>
+  <p>Contact: <a rel="noopener" href="mailto:rqureshi@uoguelph.ca"> rqureshi@uoguelph.ca</a>.</p>
 </footer>
 
 </html>
