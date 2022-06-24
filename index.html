@@ -23,36 +23,33 @@
     }
 
     body {
-      margin-top: 0%;
-      margin-left: 0%;
-      margin-right: 0%;
-      background-color: #f7f2e9;
+      margin: 0% 0% 5%;
+      background-color: #f3f0e9;
+    }
+
+    h1, h3, cite {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     h1 {
+      text-transform: uppercase;
       position: absolute;
       top: 40%;
       width: 100%;
       text-align: center;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 42px;
       font-weight: bolder;
       color: black;
       letter-spacing: 10px;
     }
 
-    h1 span {
-      background-color: #FFD34E;
-      padding: 5px;
-    }
-
     h2 {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       color: #DB9E36;
+      font-size:x-large;
     }
 
     h3 {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: #424363;
     }
 
@@ -60,7 +57,6 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: 16px;
       line-height: 1.4;
-      position: relative;
     }
 
     a {
@@ -68,23 +64,10 @@
       text-decoration:underline;
     }
 
-    figure {
-      margin: 0px;
-      padding-right: 5%;
-    }
-
     cite {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: smaller;
       width: auto;
-    }
-
-    header {
-      margin: 0% 0% 5% 0%;
-    }
-
-    footer {
-      margin-bottom: 5%;
+      padding-top: 1%;
     }
 
     .header-pic {
@@ -96,11 +79,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-    }
-
-    .main-content {
-      margin-right: 10%;
-      margin-left: 10%;
     }
 
     .section {
@@ -147,13 +125,13 @@
 </head>
 
 <body>
-  <header>
+  <header style="margin-bottom: 5%">
     <span class="header-pic">
-      <h1><span>Healthy Honey</span></hi>
+      <h1><span style="background-color: #FFD34E; padding: 5px;">Honey and Health</span></hi>
       </span>
   </header>
 
-  <div class="main-content">
+  <div style="margin: 0% 10%">
     <p>
       Honey is a natural liquid sweetener bees make after collecting flower nectar. Known for its millions of uses in our
       favourite foods and enormous list of health benefits, you’re sure to have had a taste of this sugary delight at least
@@ -167,47 +145,48 @@
       have a milder taste than its darker counterpart.
     </p>
     <p>
-      More broadly speaking though, honey comes in two forms: raw and pasteurized. While the latter can improve texture and
-      colour, the heat used to kill undesirable yeast also tears down many of the beneficial nutrients within the honey. This
-      is why, to retain said nutrients at least, many prefer raw honey instead.
+      More broadly speaking though, honey comes in two forms: raw and pasteurized. The latter is what we usually see in bear
+      bottles at the grocery store… while pasteurizing honey can improve texture and colour, the heat used to kill undesirable
+      yeast also tears down many of the beneficial nutrients within the honey. This is why, to retain said nutrients at least,
+      many prefer raw honey instead.
     </p>
 
     <ul>
-      <li> <a href="#section2"> Overall Benefits </a></li>
-      <li> <a href="#section3"> Foodie Favourites </a></li>
-      <li> <a href="#section4"> Good to know </a></li>
-      <li> <a href="#section5"> Further Reading </a></li>
+      <li> <a href="#section1"> Overall Benefits </a></li>
+      <li> <a href="#section2"> Foodie Favourites </a></li>
+      <li> <a href="#section3"> Good to know </a></li>
     </ul>
 
-    <div class="section" id="section2">
+    <div class="section" id="section1">
       <h2> Overall Benefits </h2>
       <p>
-        Before diving into why you may want to incorporate specific kinds of honey into your diet, it’s worth noting most
+        Before diving into why you may want to incorporate specific kinds of (raw) honey into your diet, it’s worth noting most
         kinds actually share a core set of benefits! Here are a few:
       </p>
       
       <ul>
         <li>
-          While honey is mostly sugar, it contains no fat, and has small amounts of many vitamins and is rich in compounds found
-          in plants that work to boost health.
+          <b>It's rich in nutrients.</b> While honey is mostly sugar, it contains no fat, and has small amounts of many vitamins such as calcium, iron,
+          magnesium, and potassium. It is rich in <i>polyphenols</i>; compounds found in plants that studies suggest boost digestive and
+          brain health.
         </li>
         <li>
-          Honey has antidiabetic effects. It contains adiponectin, a hormone that helps regulate glucose and lipid levels which
+          <b>Honey has antidiabetic effects.</b> It contains <i>adiponectin</i>, a hormone that helps regulate glucose and lipid levels which
           diabetic patients are known to have less of. The more of this hormone your body has, the greater the improvement in
           fasting blood sugar levels.
         </li>
         <li>
-          Wound healing. When applied directly to your skin, honey can actually help accelerate one’s recovery process after
+          <b>Wound healing.</b> When applied directly to your skin, honey can actually help accelerate one’s recovery process after
           burns, wounds, and various other skin conditions.
         </li>
         <li>
-          Great for sore throats. Many studies suggest consuming it may be one of the better methods of combatting sore throats
+          <b>Great for sore throats.</b> Many studies suggest consuming it may be one of the better methods of combatting sore throats
           and coughs.
         </li>
       </ul>
     </div>
       
-    <div class="section" id="section3">
+    <div class="section" id="section2">
       <h2> Foodie Favourites </h2>
       <p>
         Now that we’ve gone over some of the main health improvement-related properties of honey, let’s take a closer look at a
@@ -216,17 +195,21 @@
       </p>
       
       <!-- MANUKA HONEY -->
-      <h3> Manuka Honey </h3>
+      <h3 style="text-transform: uppercase;"> Manuka Honey </h3>
       <div class="block honey-section">
         <div class="honey-content">
           <div class="honey-image">
             <img src="manuka.jpg" alt="manuka honey">
-            <cite style="width: auto;"> [1] </cite>
+            <cite style="width: auto;">
+              <a href="https://health.clevelandclinic.org/manuka-honey-benefits/">
+                clevelandclinic.org
+              </a>
+            </cite>
           </div>
           <div class="honey-info">
             <p>
-              Manuka honey is said to have a mildly sweet and nutty flavour, followed a lasting bitter aftertaste. It comes from a
-              certain kind of tea tree called the manuka shrub.
+              Manuka honey is said to have a mildly sweet and nutty flavour, followed a lasting bitter aftertaste. It comes from the
+              manuka shrub, which is a kind of tea tree.
             </p>
             <p>
               Though some may not love it for its flavour, it’s widely known for its health benefits. Native to New Zealand and
@@ -244,12 +227,16 @@
       </div>
   
       <!-- BUCKWHEAT HONEY -->
-      <h3> Buckwheat Honey </h3>
+      <h3 style="text-transform: uppercase;"> Buckwheat Honey </h3>
       <div class="block honey-section">
         <div class="honey-content">
           <div class="honey-image">
             <img src="buckwheat.jpg" alt="buckwheat honey">
-            <cite style="width: auto;"> [2] </cite>
+            <cite style="width: auto;">
+              <a href="https://www.honeytraveler.com/single-flower-honey/buckwheat-honey/">
+                honeytraveler.com
+              </a>
+            </cite>
           </div>
           <div class="honey-info">
             <p>
@@ -275,12 +262,16 @@
       </div>
   
       <!-- ACACIA HONEY -->
-      <h3> Acacia Honey </h3>
+      <h3 style="text-transform: uppercase;"> Acacia Honey </h3>
       <div class="block honey-section">
         <div class="honey-content">
           <div class="honey-image"">
             <img src="acacia.jpg" alt="acacia honey">
-            <cite style="width: auto;"> [3] </cite>
+            <cite style="width: auto;">
+              <a href="https://www.webstaurantstore.com/guide/685/types-of-honey.html#types">
+                webstaurantstore.com
+              </a>
+            </cite>
           </div>
           <div class="honey-info">        
             <p>
@@ -296,7 +287,7 @@
       </div>
     </div>
 
-    <div class="section" id="section4">
+    <div class="section" id="section3">
       <h2> Good to know </h2>
       <p>
         While honey has an endless amount of health benefits, its consumption can cause severe reactions for those allergic to
@@ -319,34 +310,7 @@
       </ul>
     </div>
 
-    <div class="section" id="section5">
-      <h2> Further Reading </h2> 
-      <ul>
-        <li>
-          [Ref 1]
-          <a href="https://health.clevelandclinic.org/manuka-honey-benefits/">
-            clevelandclinic.org
-          </a>
-        </li>
-        <li>
-          [Ref 2]
-          <a href="https://www.honeytraveler.com/single-flower-honey/buckwheat-honey/">
-            honeytraveler.com
-          </a>
-        </li>
-        <li>
-          [Ref 3]
-          <a href="https://www.webstaurantstore.com/guide/685/types-of-honey.html#types">
-            webstaurantstore.com
-          </a>
-        </li>
-      </ul>
-    </div>
-
+  </div>
 </body>
-
-<footer>
-  <p>Contact: <a rel="noopener" href="mailto:rqureshi@uoguelph.ca"> rqureshi@uoguelph.ca</a>.</p>
-</footer>
 
 </html>
