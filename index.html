@@ -10,10 +10,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- colours:
-    background: #fdf9f1 (off white)
+    background: #F3F0E9 (off white)
     highlight: #FFD34E (mustard yellow)
     h2: #DB9E36 (yellow-brown)
     h3: #424363 (blue-grey)
+    line separator and shadow: #D2D2D8 (light blue)
+    image border: #727381 (grey-blue)
   -->
 
   <style>
@@ -79,6 +81,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      box-shadow: 0px 15px 15px #d2d2d8;
     }
 
     .section {
@@ -125,45 +128,70 @@
 </head>
 
 <body>
+  <!-- HEADER CONTENT -->
   <header style="margin-bottom: 5%">
     <span class="header-pic">
       <h1><span style="background-color: #FFD34E; padding: 5px;">Honey and Health</span></hi>
       </span>
   </header>
 
+  <!-- WEBSITE CONTENT -->
   <div style="margin: 0% 10%">
-    <p>
-      Honey is a natural liquid sweetener bees make after collecting flower nectar. Known for its millions of uses in our
-      favourite foods and enormous list of health benefits, you’re sure to have had a taste of this sugary delight at least
-      once in your life. If you’re one of the many people who believe there’s only one kind of honey, this article is about to
-      help you get your facts straight.
-    </p>
-    <p>
-      Over 300 types of honey exist today, each with distinct flavours, colours, and health benefits. While honey is
-      categorized based on its flower source, the same kind of honey can still taste significantly different based on
-      temperature and rainfall level. Even its colour is a telling point for its flavour – lighter-coloured honey is known to
-      have a milder taste than its darker counterpart.
-    </p>
-    <p>
-      More broadly speaking though, honey comes in two forms: raw and pasteurized. The latter is what we usually see in bear
-      bottles at the grocery store… while pasteurizing honey can improve texture and colour, the heat used to kill undesirable
-      yeast also tears down many of the beneficial nutrients within the honey. This is why, to retain said nutrients at least,
-      many prefer raw honey instead.
-    </p>
 
-    <ul>
-      <li> <a href="#section1"> Overall Benefits </a></li>
-      <li> <a href="#section2"> Foodie Favourites </a></li>
-      <li> <a href="#section3"> Good to know </a></li>
-    </ul>
+    <!-- OVERVIEW -->
+    <div style="display:flex; flex-direction:row; align-items: center;">
+      <!-- table of contents -->
+      <div style="min-width: 15%; border-right: 2px solid #d2d2d8">
+        <p>Contents</p>
+        <ul>
+          <li> <a href="#section1"> Overall Benefits </a></li>
+          <li> <a href="#section2"> Foodie Favourites </a></li>
+          <li> <a href="#manuka"> <b>Manuka Honey</b> </a></li>
+          <li> <a href="#buckwheat"> <b>Buckwheat Honey</b> </a></li>
+          <li> <a href="#acacia"> <b>Acacia Honey</b> </a></li>
+          <li> <a href="#section3"> Good to know </a></li>
+        </ul>
+      </div>
+      <!-- introduction -->
+      <div style="margin: 0% 5%; min-width: 50%;">
+        <p>
+          Honey is a natural liquid sweetener bees make after collecting flower nectar. Known for its millions of uses in our
+          favourite foods and enormous list of health benefits, you’re sure to have had a taste of this sugary delight at least
+          once in your life. If you’re one of the many people who believe there’s only one kind of honey, this article is about to
+          help you get your facts straight.
+        </p>
+        <p>
+          Over 300 types of honey exist today, each with distinct flavours, colours, and health benefits. While honey is
+          categorized based on its flower source, the same kind of honey can still taste significantly different based on
+          temperature and rainfall level. Even its colour is a telling point for its flavour – lighter-coloured honey is known to
+          have a milder taste than its darker counterpart.
+        </p>
+      </div>
+      <!-- image -->
+      <div style="margin: 0%">
+        <img src="honey-types.jpg" alt="types of honey" style="width:100%; border: 2px solid #727381;">
+        <cite style="width: auto;">
+          <a href="https://www.webstaurantstore.com/guide/685/types-of-honey.html#types">
+            webstaurantstore.com
+          </a>
+        </cite>
+      </div>
+    </div>
 
+    <!-- OVERALL BENEFITS OF HONEY -->
     <div class="section" id="section1">
       <h2> Overall Benefits </h2>
+      <p>
+        Honey comes in raw and pasteurized forms. The latter is what we usually see in bear
+        bottles at the grocery store… while pasteurizing honey can improve texture and colour, the heat used to kill undesirable
+        yeast also tears down many of the beneficial nutrients within the honey. This is why, to retain said nutrients at
+        least, many prefer raw honey instead.
+      </p>
+      <!-- list of benefits -->
       <p>
         Before diving into why you may want to incorporate specific kinds of (raw) honey into your diet, it’s worth noting most
         kinds actually share a core set of benefits! Here are a few:
       </p>
-      
       <ul>
         <li>
           <b>It's rich in nutrients.</b> While honey is mostly sugar, it contains no fat, and has small amounts of many vitamins such as calcium, iron,
@@ -186,6 +214,7 @@
       </ul>
     </div>
       
+    <!-- TYPES OF HONEY AND THEIR BENEFITS -->
     <div class="section" id="section2">
       <h2> Foodie Favourites </h2>
       <p>
@@ -195,17 +224,19 @@
       </p>
       
       <!-- MANUKA HONEY -->
-      <h3 style="text-transform: uppercase;"> Manuka Honey </h3>
+      <h3 style="text-transform: uppercase; padding-top:2%; margin-top:0%;" id="manuka"> Manuka Honey </h3>
       <div class="block honey-section">
         <div class="honey-content">
+          <!-- honey image -->
           <div class="honey-image">
-            <img src="manuka.jpg" alt="manuka honey">
+            <img src="manuka.jpg" alt="manuka honey" style="border: 2px solid #727381;">
             <cite style="width: auto;">
               <a href="https://health.clevelandclinic.org/manuka-honey-benefits/">
                 clevelandclinic.org
               </a>
             </cite>
           </div>
+          <!-- honey info -->
           <div class="honey-info">
             <p>
               Manuka honey is said to have a mildly sweet and nutty flavour, followed a lasting bitter aftertaste. It comes from the
@@ -227,17 +258,19 @@
       </div>
   
       <!-- BUCKWHEAT HONEY -->
-      <h3 style="text-transform: uppercase;"> Buckwheat Honey </h3>
+      <h3 style="text-transform: uppercase; padding-top:2%; margin-top:0%;" id="buckwheat"> Buckwheat Honey </h3>
       <div class="block honey-section">
         <div class="honey-content">
+          <!-- honey image -->
           <div class="honey-image">
-            <img src="buckwheat.jpg" alt="buckwheat honey">
+            <img src="buckwheat.jpg" alt="buckwheat honey" style="border: 2px solid #727381;">
             <cite style="width: auto;">
               <a href="https://www.honeytraveler.com/single-flower-honey/buckwheat-honey/">
                 honeytraveler.com
               </a>
             </cite>
           </div>
+          <!-- honey info -->
           <div class="honey-info">
             <p>
               Canada-based Buckwheat honey has the strongest flavour and darkest colour of the many types of honey we use today.
@@ -262,17 +295,19 @@
       </div>
   
       <!-- ACACIA HONEY -->
-      <h3 style="text-transform: uppercase;"> Acacia Honey </h3>
+      <h3 style="text-transform: uppercase; padding-top:2%; margin-top:0%;" id="acacia"> Acacia Honey </h3>
       <div class="block honey-section">
         <div class="honey-content">
-          <div class="honey-image"">
-            <img src="acacia.jpg" alt="acacia honey">
+          <!-- honey image -->
+          <div class="honey-image">
+            <img src="acacia.jpg" alt="acacia honey" style="border: 2px solid #727381;">
             <cite style="width: auto;">
               <a href="https://www.webstaurantstore.com/guide/685/types-of-honey.html#types">
                 webstaurantstore.com
               </a>
             </cite>
           </div>
+          <!-- honey info -->
           <div class="honey-info">        
             <p>
               Acacia honey, native to eastern and southeastern North America, is almost colourless and has a lightweight, sweet
@@ -287,6 +322,7 @@
       </div>
     </div>
 
+    <!-- DISCLAIMER -->
     <div class="section" id="section3">
       <h2> Good to know </h2>
       <p>
