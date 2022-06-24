@@ -20,13 +20,14 @@
 
   <style>
     :root {
-      --background: #F3F0E9;
+      --background: #f8f5ee;
       --highlight: #FFD34E;
-      --header2: #e9ac44;
+      --header2: #c27b00;
       --header3: #424363;
       --lineseparator: #D2D2D8;
       --imageborder: #727381;
-      --lightbluebg: #B2C5D4; 
+      --blockbg: #b9d1e4; 
+      --blockborder: #f0ce6a; 
     }
 
     div {
@@ -100,9 +101,9 @@
 
     .honey-section {
       padding: 1% 2% 1%;
-      background-color: var(--lightbluebg);
+      background-color: var(--blockbg);
       outline: auto;
-      outline-color: burlywood;
+      outline-color: var(--blockborder);
       outline-style:round;
     }
 
@@ -145,14 +146,14 @@
     <div style="display:flex; flex-direction:row; align-items: center;">
       <!-- table of contents -->
       <div style="min-width: 15%; border-right: 2px solid #d2d2d8">
-        <p>Contents</p>
+        <p>Read more below!</p>
         <ul>
-          <li> <a href="#section1"> Overall Benefits </a></li>
-          <li> <a href="#section2"> Foodie Favourites </a></li>
+          <li> <a href="#benefits"> Overall Benefits </a></li>
+          <li> <a href="#types"> Foodie Favourites </a></li>
           <li> <a href="#manuka"> <b>Manuka Honey</b> </a></li>
           <li> <a href="#buckwheat"> <b>Buckwheat Honey</b> </a></li>
           <li> <a href="#acacia"> <b>Acacia Honey</b> </a></li>
-          <li> <a href="#section3"> Good to know </a></li>
+          <li> <a href="#disclaimer"> Good to know </a></li>
         </ul>
       </div>
       <!-- introduction -->
@@ -182,7 +183,7 @@
     </div>
 
     <!-- OVERALL BENEFITS OF HONEY -->
-    <div class="section" id="section1">
+    <div class="section" id="benefits">
       <h2> Overall Benefits </h2>
       <p>
         Honey comes in raw and pasteurized forms. The latter is what we usually see in bear
@@ -216,9 +217,9 @@
         </li>
       </ul>
     </div>
-      
+
     <!-- TYPES OF HONEY AND THEIR BENEFITS -->
-    <div class="section" id="section2">
+    <div class="section" id="types">
       <h2> Foodie Favourites </h2>
       <p>
         Now that we’ve gone over some of the main health improvement-related properties of honey, let’s take a closer look at a
@@ -227,7 +228,7 @@
       </p>
       
       <!-- MANUKA HONEY -->
-      <h3 style="text-transform: uppercase; padding-top:2%; margin-top:0%;" id="manuka"> Manuka Honey </h3>
+      <h3 id="manuka" style="text-transform: uppercase; padding-top:2%; margin-top:0%;"> Manuka Honey </h3>
       <div class="honey-section">
         <div class="honey-content">
           <!-- honey image -->
@@ -261,7 +262,7 @@
       </div>
   
       <!-- BUCKWHEAT HONEY -->
-      <h3 style="text-transform: uppercase; padding-top:2%; margin-top:0%;" id="buckwheat"> Buckwheat Honey </h3>
+      <h3 id="buckwheat" style="text-transform: uppercase; padding-top:2%; margin-top:0%;"> Buckwheat Honey </h3>
       <div class="honey-section">
         <div class="honey-content">
           <!-- honey image -->
@@ -298,7 +299,7 @@
       </div>
   
       <!-- ACACIA HONEY -->
-      <h3 style="text-transform: uppercase; padding-top:2%; margin-top:0%;" id="acacia"> Acacia Honey </h3>
+      <h3 id="acacia" style="text-transform: uppercase; padding-top:2%; margin-top:0%;"> Acacia Honey </h3>
       <div class="honey-section">
         <div class="honey-content">
           <!-- honey image -->
@@ -326,7 +327,7 @@
     </div>
 
     <!-- DISCLAIMER -->
-    <div class="section" id="section3">
+    <div class="section" id="disclaimer">
       <h2> Good to know </h2>
       <p>
         While honey has an endless amount of health benefits, its consumption can cause severe reactions for those allergic to
