@@ -14,7 +14,6 @@
     highlight: #FFD34E (mustard yellow)
     h2: #DB9E36 (yellow-brown)
     h3: #424363 (blue-grey)
-    lighter shade: #FFFAD5 (light yellow)
   -->
 
   <style>
@@ -27,7 +26,7 @@
       margin-top: 0%;
       margin-left: 0%;
       margin-right: 0%;
-      background-color: #fdf9f1;
+      background-color: #f7f2e9;
     }
 
     h1 {
@@ -57,16 +56,15 @@
       color: #424363;
     }
 
-
     p, li {
-      font-family: Arial, Geneva, Tahoma, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: 16px;
       line-height: 1.4;
       position: relative;
     }
 
     a {
-      color: #424363;
+      color: #4a4c94;
       text-decoration:underline;
     }
 
@@ -101,18 +99,22 @@
     }
 
     .main-content {
-      margin-right: 5%;
-      margin-left: 5%;
+      margin-right: 10%;
+      margin-left: 10%;
     }
 
     .section {
-      margin-top: 2%;
+      padding-top: 2%;
     }
 
-    .honey-section {
+    .honey-content {
       display:grid; 
       grid-template-columns:repeat(5, minmax(0, 1fr));
       align-items:center;
+    }
+
+    .honey-content p {
+      margin-top: 0%;
     }
 
     .honey-image {
@@ -126,14 +128,29 @@
       padding-left:5%;
     }
 
+    .block {
+      padding: 1% 2% 2%;
+      margin: 2% 0% 2%;
+      background-color: #dddad6;
+      outline: auto;
+      outline-color: burlywood;
+      outline-style:round;
+    }
+    
+    .honey-section {
+      margin: 0% 0% 2%;
+      background-color: #b2c5d4;
+      padding: 1% 2% 1%;
+    }
+
   </style>
 </head>
 
 <body>
   <header>
-    <div class="header-pic">
+    <span class="header-pic">
       <h1><span>Healthy Honey</span></hi>
-    </div>
+      </span>
   </header>
 
   <div class="main-content">
@@ -161,9 +178,6 @@
       <li> <a href="#section4"> Good to know </a></li>
       <li> <a href="#section5"> Further Reading </a></li>
     </ul>
-
-    <div class="section" id="section1">
-    </div>
 
     <div class="section" id="section2">
       <h2> Overall Benefits </h2>
@@ -203,75 +217,81 @@
       
       <!-- MANUKA HONEY -->
       <h3> Manuka Honey </h3>
-      <div class="honey-section">
-        <div class="honey-image">
-          <img src="manuka.jpg" alt="manuka honey">
-          <cite style="width: auto;"> [1] </cite>
-        </div>
-        <div class="honey-info">
-          <p>
-            Manuka honey is said to have a mildly sweet and nutty flavour, followed a lasting bitter aftertaste. It comes from a
-            certain kind of tea tree called the manuka shrub.
-          </p>
-          <p>
-            Though some may not love it for its flavour, it’s widely known for its health benefits. Native to New Zealand and
-            Australia, Manuka honey is rich in antibacterial properties, making it one of the better types of honey when used for
-            protection against bacteria and damaged tissue repair, as well as treating skincare conditions such as acne and eczema.
-            From a medical standpoint, it’s known best for its effectiveness in minor wound and burn healing (it’s been an
-            FDA-approved option for healing wounds since 2007!). While studies suggest it can also reduce digestive health issues
-            such as stomach ulcers, there is a lack of evidence to back it up.
-          </p>
-          <p>
-            Manuka honey is commonly used as a spread on toast and bagels, but is enjoyed with yogurt as well.
-          </p>
+      <div class="block honey-section">
+        <div class="honey-content">
+          <div class="honey-image">
+            <img src="manuka.jpg" alt="manuka honey">
+            <cite style="width: auto;"> [1] </cite>
+          </div>
+          <div class="honey-info">
+            <p>
+              Manuka honey is said to have a mildly sweet and nutty flavour, followed a lasting bitter aftertaste. It comes from a
+              certain kind of tea tree called the manuka shrub.
+            </p>
+            <p>
+              Though some may not love it for its flavour, it’s widely known for its health benefits. Native to New Zealand and
+              Australia, Manuka honey is rich in antibacterial properties, making it one of the better types of honey when used for
+              protection against bacteria and damaged tissue repair, as well as treating skincare conditions such as acne and eczema.
+              From a medical standpoint, it’s known best for its effectiveness in minor wound and burn healing (it’s been an
+              FDA-approved option for healing wounds since 2007!). While studies suggest it can also reduce digestive health issues
+              such as stomach ulcers, there is a lack of evidence to back it up.
+            </p>
+            <p>
+              Manuka honey is commonly used as a spread on toast and bagels, but is enjoyed with yogurt as well.
+            </p>
+          </div>
         </div>
       </div>
-
+  
       <!-- BUCKWHEAT HONEY -->
       <h3> Buckwheat Honey </h3>
-      <div class="honey-section">
-        <div class="honey-image">
-          <img src="buckwheat.jpg" alt="buckwheat honey">
-          <cite style="width: auto;"> [2] </cite>
-        </div>
-        <div class="honey-info">
-          <p>
-            Canada-based Buckwheat honey has the strongest flavour and darkest colour of the many types of honey we use today.
-            This amber-coloured honey is generally described to have an earthy aroma and is said to be less sweet than many other
-            honey varieties. This honey is made from the nectar bees collect from Buckwheat flowers.
-          </p>
-          <p>
-            All variants of this honey contain a high level of antioxidants… but what exactly does that mean? To start off,
-            oxidants are reactive molecules produced in areas of your body in which other cellular molecules such
-            as your DNA, lipids, and protein reside. The damage caused by the reaction between oxidants and other cellular molecules can have
-            serious health implications including, but not limited to, premature aging, heart disease, and cancer. What does that
-            make antioxidants? Well, quite the opposite. They help protect these macromolecules by preventing oxidants from being
-            able to attack them in the first place – and that’s why they’re so important. While Manuka honey may be considered the
-            healthier alternative from the wound healing standpoint, Buckwheat honey’s antioxidant properties trump those of Manuka
-            honey.
-          </p>
-          <p>
-            Buckwheat honey is paired with waffles, oatmeal, smoothies, and much more.
-          </p>
+      <div class="block honey-section">
+        <div class="honey-content">
+          <div class="honey-image">
+            <img src="buckwheat.jpg" alt="buckwheat honey">
+            <cite style="width: auto;"> [2] </cite>
+          </div>
+          <div class="honey-info">
+            <p>
+              Canada-based Buckwheat honey has the strongest flavour and darkest colour of the many types of honey we use today.
+              This amber-coloured honey is generally described to have an earthy aroma and is said to be less sweet than many other
+              honey varieties. This honey is made from the nectar bees collect from Buckwheat flowers.
+            </p>
+            <p>
+              All variants of this honey contain a high level of antioxidants… but what exactly does that mean? To start off,
+              oxidants are reactive molecules produced in areas of your body in which other cellular molecules such
+              as your DNA, lipids, and protein reside. The damage caused by the reaction between oxidants and other cellular molecules can have
+              serious health implications including, but not limited to, premature aging, heart disease, and cancer. What does that
+              make antioxidants? Well, quite the opposite. They help protect these macromolecules by preventing oxidants from being
+              able to attack them in the first place – and that’s why they’re so important. While Manuka honey may be considered the
+              healthier alternative from the wound healing standpoint, Buckwheat honey’s antioxidant properties trump those of Manuka
+              honey.
+            </p>
+            <p>
+              Buckwheat honey is paired with waffles, oatmeal, smoothies, and much more.
+            </p>
+          </div>
         </div>
       </div>
-
+  
       <!-- ACACIA HONEY -->
       <h3> Acacia Honey </h3>
-      <div class="honey-section">
-        <div class="honey-image"">
-          <img src="acacia.jpg" alt="acacia honey">
-          <cite style="width: auto;"> [3] </cite>
-        </div>
-        <div class="honey-info">        
-          <p>
-            Acacia honey, native to eastern and southeastern North America, is almost colourless and has a lightweight, sweet
-            flavour, with a hint of vanilla. Not only is it loved for its taste, but its low sucrose content also makes it the
-            preferred choice for diabetics, and its anti-inflammatory properties makes it a good treatment for respiratory disorders.
-          </p>
-          <p>
-            It’s used with cereal, yogurt, and many drinks and desserts.
-          </p>
+      <div class="block honey-section">
+        <div class="honey-content">
+          <div class="honey-image"">
+            <img src="acacia.jpg" alt="acacia honey">
+            <cite style="width: auto;"> [3] </cite>
+          </div>
+          <div class="honey-info">        
+            <p>
+              Acacia honey, native to eastern and southeastern North America, is almost colourless and has a lightweight, sweet
+              flavour, with a hint of vanilla. Not only is it loved for its taste, but its low sucrose content also makes it the
+              preferred choice for diabetics, and its anti-inflammatory properties makes it a good treatment for respiratory disorders.
+            </p>
+            <p>
+              It’s used with cereal, yogurt, and many drinks and desserts.
+            </p>
+          </div>
         </div>
       </div>
     </div>
