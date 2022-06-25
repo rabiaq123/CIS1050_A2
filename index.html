@@ -9,15 +9,6 @@
   <meta name="author" content="Rabia Qureshi">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- colours:
-    background: #F3F0E9 (off white)
-    highlight: #FFD34E (mustard yellow)
-    h2: #DB9E36 (yellow-brown)
-    h3: #424363 (blue-grey)
-    line separator and shadow: #D2D2D8 (light blue)
-    image border: #727381 (grey-blue)
-  -->
-
   <style>
     :root {
       --background: #f8f5ee;
@@ -26,8 +17,9 @@
       --header3: #424363;
       --lineseparator: #D2D2D8;
       --imageborder: #727381;
-      --blockbg: #b9d1e4; 
-      --blockborder: #f0ce6a; 
+      --blockbg: #f5e6ba;
+      --blockborder: burlywood;
+      --purplegrey: #4a4c94;
     }
 
     div {
@@ -73,7 +65,7 @@
     }
 
     a {
-      color: #4a4c94;
+      color: var(--purplegrey);
       text-decoration:underline;
     }
 
@@ -108,20 +100,20 @@
     }
 
     .honey-content {
-      display:grid; 
+      display:grid;
       grid-template-columns:repeat(5, minmax(0, 1fr));
       align-items:center;
     }
 
     .honey-image {
-      display:flex; 
-      flex-direction:column; 
+      display:flex;
+      flex-direction:column;
       grid-column:span 1/span 1;
     }
 
     .honey-info {
       padding-left:5%;
-      grid-column:span 4/span 4; 
+      grid-column:span 4/span 4;
     }
 
     .honey-content p {
@@ -148,7 +140,7 @@
       <div style="min-width: 15%; border-right: 2px solid var(--lineseparator)">
         <p>Read more below!</p>
         <ul>
-          <li> <a href="#benefits"> Overall Benefits </a></li>
+          <li> <a href="#benefits"> Traditional Benefits </a></li>
           <li> <a href="#types"> Foodie Favourites </a></li>
           <li> <a href="#manuka"> <b>Manuka Honey</b> </a></li>
           <li> <a href="#buckwheat"> <b>Buckwheat Honey</b> </a></li>
@@ -184,35 +176,35 @@
 
     <!-- OVERALL BENEFITS OF HONEY -->
     <div class="section" id="benefits">
-      <h2> Overall Benefits </h2>
+      <h2> Traditional Benefits </h2>
       <p>
-        Honey comes in raw and pasteurized forms. The latter is what we usually see in bear
-        bottles at the grocery store… while pasteurizing honey can improve texture and colour, the heat used to kill undesirable
-        yeast also tears down many of the beneficial nutrients within the honey. This is why, to retain said nutrients at
-        least, many prefer raw honey instead.
+        Honey comes in raw and pasteurized forms. The latter is what we usually see in bear bottles at the grocery store… 
+        while pasteurizing honey can improve texture and colour, the heat used to kill undesirable yeast also tears down 
+        many of the beneficial nutrients within the honey. This is why, to retain said nutrients atleast, many prefer raw 
+        honey instead.
       </p>
       <!-- list of benefits -->
       <p>
-        Before diving into why you may want to incorporate specific kinds of (raw) honey into your diet, it’s worth noting most
+        Before diving into health-giving properties unique to specific kinds of (raw) honey, it’s worth noting most
         kinds actually share a core set of benefits! Here are a few:
       </p>
       <ul>
         <li>
-          <b>It's rich in nutrients.</b> While honey is mostly sugar, it contains no fat, and has small amounts of many vitamins such as calcium, iron,
-          magnesium, and potassium. It is rich in <i>polyphenols</i>; compounds found in plants that studies suggest boost digestive and
-          brain health.
+          <b style="color: var(--header3)">Richness in nutrients.</b> While honey <i>is</i> mostly sugar, it contains small amounts of many vitamins 
+          such as calcium, iron, magnesium, and potassium, and no fat. It is rich in <i>polyphenols</i>; compounds found 
+          in plants that studies suggest boost digestive and brain health.
         </li>
         <li>
-          <b>Honey has antidiabetic effects.</b> It contains <i>adiponectin</i>, a hormone that helps regulate glucose and lipid levels which
+          <b style="color: var(--header3)">Antidiabetic effects.</b> It contains <i>adiponectin</i>, a hormone that helps regulate glucose and lipid levels which
           diabetic patients are known to have less of. The more of this hormone your body has, the greater the improvement in
           fasting blood sugar levels.
         </li>
         <li>
-          <b>Wound healing.</b> When applied directly to your skin, honey can actually help accelerate one’s recovery process after
+          <b style="color: var(--header3)">Wound healing.</b> When applied directly to your skin, honey can actually help accelerate one’s recovery process after
           burns, wounds, and various other skin conditions.
         </li>
         <li>
-          <b>Great for sore throats.</b> Many studies suggest consuming it may be one of the better methods of combatting sore throats
+          <b style="color: var(--header3)">Great for sore throats.</b> Many studies suggest consuming it may be one of the better methods of combatting sore throats
           and coughs.
         </li>
       </ul>
@@ -224,9 +216,9 @@
       <p>
         Now that we’ve gone over some of the main health improvement-related properties of honey, let’s take a closer look at a
         few of the most loved kinds of honey around the world, known not only for their flavour profile, but also for the
-        additional health benefits they bring with them
+        additional health benefits they bring with them.
       </p>
-      
+
       <!-- MANUKA HONEY -->
       <h3 id="manuka" style="text-transform: uppercase; padding-top:2%; margin-top:0%;"> Manuka Honey </h3>
       <div class="honey-section">
@@ -243,16 +235,24 @@
           <!-- honey info -->
           <div class="honey-info">
             <p>
-              Manuka honey is said to have a mildly sweet and nutty flavour, followed a lasting bitter aftertaste. It comes from the
-              manuka shrub, which is a kind of tea tree.
+              Manuka honey is said to have a mildly sweet and nutty flavour that is followed by a lasting bitter aftertaste. It comes
+              from the manuka shrub, which is a kind of tea tree native to New Zealand and Australia.
             </p>
             <p>
-              Though some may not love it for its flavour, it’s widely known for its health benefits. Native to New Zealand and
-              Australia, Manuka honey is rich in antibacterial properties, making it one of the better types of honey when used for
-              protection against bacteria and damaged tissue repair, as well as treating skincare conditions such as acne and eczema.
-              From a medical standpoint, it’s known best for its effectiveness in minor wound and burn healing (it’s been an
-              FDA-approved option for healing wounds since 2007!). While studies suggest it can also reduce digestive health issues
-              such as stomach ulcers, there is a lack of evidence to back it up.
+              Though some may not love it for its flavour, it’s widely known for its health benefits. Manuka honey is rich in
+              antibacterial properties. One of its primary antibacterial components is methylglyoxal (MGO), whose concentration level
+              has a direct relationship with the intensity of the antibacterial effect. Honey makers evaluate the strength of the
+              Manuka honey they collect using the Unique Manuka Factor (UMF) rating system. The UMF quality trademark observes the
+              concentration of MGO and other primary compounds that should be found in genuine Manuka honey. A rating of UMF 10+ is
+              required for the honey to be considered medically beneficial to the consumer. The higher the MGO concentration, the
+              stronger the antibacterial effect.
+            </p>
+            <p>
+              Manuka honey’s antibacterial properties make it the honey of choice for protection against bacteria and damaged tissue
+              repair, as well as treating skincare conditions such as acne and eczema. From a medical standpoint, it’s known best for
+              its effectiveness in minor wound and burn healing (it’s been an FDA-approved option to heal wounds since 2007!). While
+              studies suggest it can also help treat digestive health issues such as stomach ulcers, there is a lack of evidence to
+              back it up.
             </p>
             <p>
               Manuka honey is commonly used as a spread on toast and bagels, but is enjoyed with yogurt as well.
@@ -260,7 +260,7 @@
           </div>
         </div>
       </div>
-  
+
       <!-- BUCKWHEAT HONEY -->
       <h3 id="buckwheat" style="text-transform: uppercase; padding-top:2%; margin-top:0%;"> Buckwheat Honey </h3>
       <div class="honey-section">
@@ -277,27 +277,28 @@
           <!-- honey info -->
           <div class="honey-info">
             <p>
-              Canada-based Buckwheat honey has the strongest flavour and darkest colour of the many types of honey we use today.
-              This amber-coloured honey is generally described to have an earthy aroma and is said to be less sweet than many other
-              honey varieties. This honey is made from the nectar bees collect from Buckwheat flowers.
+              Canada-based Buckwheat honey has the strongest flavour and darkest colour of all honey varieties. This amber-coloured
+              honey is generally described to have an earthy aroma and is said to be less sweet than the average honey. It’s made from
+              the nectar bees collect from buckwheat flowers. Buckwheat’s richness in vitamins is what makes its honey so nourishing
+              as well.
             </p>
             <p>
-              All variants of this honey contain a high level of antioxidants… but what exactly does that mean? To start off,
-              oxidants are reactive molecules produced in areas of your body in which other cellular molecules such
-              as your DNA, lipids, and protein reside. The damage caused by the reaction between oxidants and other cellular molecules can have
-              serious health implications including, but not limited to, premature aging, heart disease, and cancer. What does that
-              make antioxidants? Well, quite the opposite. They help protect these macromolecules by preventing oxidants from being
-              able to attack them in the first place – and that’s why they’re so important. While Manuka honey may be considered the
-              healthier alternative from the wound healing standpoint, Buckwheat honey’s antioxidant properties trump those of Manuka
-              honey.
+              All variants of this honey contain a high level of antioxidants… but what exactly does that mean? To start off, oxidants
+              – or reactive oxygen species (ROS) – are reactive molecules produced in areas of your body in which other cellular
+              molecules such as your DNA, lipids, and protein reside. The damage caused by the reaction between ROS and other cellular
+              molecules can have serious health implications including, but not limited to, premature aging, heart disease, and
+              cancer. Antioxidants help protect these macromolecules by preventing ROS from being able to attack them in the first
+              place. While Manuka honey may be considered the healthier alternative from the wound healing standpoint, Buckwheat
+              honey’s antioxidant properties trump those of Manuka honey. It has also been found to aid in reducing cholesterol levels
+              and stopping DNA mutations that become the cause of illnesses including cancer.
             </p>
             <p>
-              Buckwheat honey is paired with waffles, oatmeal, smoothies, and much more.
+              Buckwheat honey is often paired with waffles, oatmeal, and smoothies, to name a few.
             </p>
           </div>
         </div>
       </div>
-  
+
       <!-- ACACIA HONEY -->
       <h3 id="acacia" style="text-transform: uppercase; padding-top:2%; margin-top:0%;"> Acacia Honey </h3>
       <div class="honey-section">
@@ -312,14 +313,31 @@
             </cite>
           </div>
           <!-- honey info -->
-          <div class="honey-info">        
+          <div class="honey-info">
             <p>
               Acacia honey, native to eastern and southeastern North America, is almost colourless and has a lightweight, sweet
               flavour, with a hint of vanilla. Not only is it loved for its taste, but its low sucrose content also makes it the
-              preferred choice for diabetics, and its anti-inflammatory properties makes it a good treatment for respiratory disorders.
+              preferred choice for diabetics, and its anti-inflammatory properties makes it a good treatment for respiratory
+              disorders.
             </p>
             <p>
-              It’s used with cereal, yogurt, and many drinks and desserts.
+              Like Buckwheat honey, Acacia honey contains a large amount of plant compounds with antioxidant properties. Flavonoids
+              are the primary type of antioxidants found in the composition of Acacia honey, and they have high antioxidant
+              capacity.
+              Their antioxidant activities are: (1) restraining ROS formation, fighting ROS present in the body, and protecting
+              existing antioxidant defenses. Various studies suggest flavonoids’ regular consumption can protect against many
+              infectious and degenerative diseases, including heart disease and cancers.
+            </p>
+            <p>
+              Most types of flavonoids are also known to have anti-inflammatory properties. Inflammation is an ordinary biological
+              process that occurs after a tissue injury, infection, or chemical irritation. Normally, it is a rapid process that
+              resolves itself spontaneously, but when the process takes a prolonged period of time, it can cause numerous chronic
+              disorders. Chronic inflammation can lead to metabolic disorders (chronic kidney disease, type 2 diabetes), neurological
+              disorders (Alzheimer’s disease, Parkinson’s disease), and cancers, to name a few. 
+              <a href="https://pubs.rsc.org/en/content/articlehtml/2010/fo/c0fo00103a">Read more here.</a>
+            </p>
+            <p>
+              Acacia honey is used with cereal, yogurt, and many drinks and desserts.
             </p>
           </div>
         </div>
